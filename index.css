@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body{
+    background: rgba(34, 34, 34, 1);
+}
+.media{
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: -1;
+    background: #000;
+    margin-bottom: 1vh;
+}
+.img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 78vh;
+    object-fit: cover;
+    opacity: 0.3;
+ }
+.media header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.media header ul{
+    display: flex;
+    align-items: center;
+}
+.media header ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.menu1 li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight:400;
+    padding: 8px 18px;
+    background: #e50914;
+    border-radius: 4px;
+} 
+.menu1 li select{
+    padding: 7px 10px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.menu1 li select option{
+    background: rgb(134, 134, 134);
+    font-family: 'Poppins',sans-serif;
+}
+.media .text{
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text h1{
+    display: block;
+    font-size: 3.9em;
+    font-weight: bold;
+    width: 40%;
+    text-align: center;
+}
+.text h3{
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-block-start: 0.90em;
+    margin-block-end: 0.90em;
+    width: 40%;
+    text-align: center;
+}
+.text h4{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-block-start: 0.90em;
+    margin-block-end: 0.90em;
+}
+.text input{
+    width: 500px;
+    height: 65px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 1.1em;
+}
+.text p{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.text a{
+    /* padding: 17px 50px; */
+    width: 30%;
+    height: 110%;
+    padding: 18px;
+    background: #dd0611;
+    border: none;
+    font-size: 1.7em;
+    color: #fff;
+}
+.media1{
+    height: 50vh;
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.media1 .data{
+    width: 70%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+}
+.data .menu2{
+    width: 44%;
+}
+.menu2 h1{
+    display: block;
+    font-size: 3.2em;
+    font-weight: bold;
+}
+.menu2 h3{
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-block-start: 0.90em;
+    margin-block-end: 0.90em;
+}
+.data .menu4{
+    width: 50%;
+}
+.menu4 h1{
+    display: block;
+    font-size: 3.2em;
+    font-weight: bold;
+}
+.menu4 h3{
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-block-start: 0.90em;
+    margin-block-end: 0.90em;
+}
+.media3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    color: #fff;
+    background: #000;
+    padding: 100px;
+    margin-bottom: 10px;
+}
+.media3 h1{
+    font-size: 3.2em;
+    margin-bottom: 5vh;
+}
+.media3 .links{
+    display: flex;
+    background: #303030;
+    width: 46%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 10px;
+}
+.links h3{
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.media3 .menu5{
+    margin-top: 10vh;
+    text-align: center;
+}
+.menu5 h3{
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-block-start: 0.90em;
+    margin-block-end: 0.90em;
+}
+.menu5 input{
+    width: 550px;
+    height: 65px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 1.1em;
+}
+.menu5 a{
+    padding: 17px 10px;
+    background: #dd0611;
+    background-repeat: no-repeat;
+    border: none;
+    font-size: 1.7em;
+    color: #fff;
+    text-decoration: none;
+    width: 200px;
+}
+.menu5 p{
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media4{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+.media4 .data1{
+    width: 50%;
+    height: 40vh;
+    padding: 50px;
+    color: #474747;
+}
+.data1 .footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #474747;
+}
+.data1 select{
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background: transparent;
+    color: #474747;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 3vh;
+}
+.data1 select option{
+    color: #474747;
+    background: #000;
+}
+
+.links-data,
+.links-data1,
+.links-data2,
+.links-data3,
+.links-data4,
+.links-data5{
+    display: none;
+}
+.links-data.active,
+.links-data1.active1,
+.links-data2.active2,
+.links-data3.active3,
+.links-data4.active4,
+.links-data5.active5
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #303030;
+    width: 46%;
+    height: 20%;
+    padding: 30px;
+    margin-top: 2px;
+}
+.links-data .inner-data p,
+.links-data1 .inner-data p,
+.links-data2 .inner-data p,
+.links-data3 .inner-data p,
+.links-data4 .inner-data p,
+.links-data5 .inner-data p
+{
+    font-size: 1.5em;
+}
+@media(max-width:1500px){
+    .media .text{
+        width: 100%;
+    }
+    .text h1{
+        font-size: 3em;
+        width: 60%;
+    }
+    .text h3{
+        width: 100%;
+    }
+    .text p a{
+       font-size: 1em;
+       padding: 25px;
+       width: 17%;
+       height: 110%;
+    }
+    .media1 .data{
+        width: 100%;
+    }
+    .media1 .menu4{
+        width: 100%;
+        font-size: 0.8em;
+    }
+}
